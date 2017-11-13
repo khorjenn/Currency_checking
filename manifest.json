@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Currency Checking",
+    "version": "1.0",
+    
+    "description": "To check currency",
+    "icons": {
+        "48": "icons/icons8-currency-exchange.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "background":{
+        "scripts": ["popup/display.js, popup/calculation.js"],
+        "page": "popup/display.html"
+    },
+    
+    "browser_action": {
+        "default_icon": "icons/icons8-currency-exchange.png",
+        "default_title": "Currency Checking",
+        "default_popup": "popup/display.html"
+    }
+}
