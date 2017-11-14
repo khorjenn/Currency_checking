@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Currency Converter</title>
+
+        <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="col-md-offset-4 col-md-4">
+                <div class="row">
+                    <br><h2>Currency Converter</h2>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-md-2">Amount:</div>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="amount"/>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-md-2">From:</div>
+                    <div class="col-md-4"><select id="from"></select></div><br>
+                    <div class="col-md-2">To:</div>
+                    <div class="col-md-4"><select id="to"></select></div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <button type="button" class="btn btn-success" id="currencyCal">Submit</button>
+                    </div>
+                </div><br>
+                <div class="row">
+                    Result: <span id="result"></span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="/popup/calculation.js"></script>
+    <script type="text/javascript" src="/popup/display.js"></script>
+    <script type="text/javascript" src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</html>
